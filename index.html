@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Education Platform</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Styles.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Online Education Platform</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#dsa">DSA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#java-developer">Java Developer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#web-developer">Web Developer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#placement-preparation">Placement Preparation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#feedbackForm">ContactUs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-4">
+        <!-- DSA Section -->
+        <section id="dsa">
+            <h2>Data Structures and Algorithms (DSA)</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img class="Dsaimg"
+                        src="https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F9a9tds9lfvvrz8mfoiyc.jpg"
+                        alt="DSA Course" class="course-img">
+                </div>
+                <div class="col-md-8">
+                    <ul class="nav nav-tabs" id="dsaTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="cplusplus-tab" data-bs-toggle="tab"
+                                data-bs-target="#cplusplus" type="button" role="tab" aria-controls="cplusplus"
+                                aria-selected="true">C++</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="java-tab" data-bs-toggle="tab" data-bs-target="#java"
+                                type="button" role="tab" aria-controls="java" aria-selected="false">Java</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="python-tab" data-bs-toggle="tab" data-bs-target="#python"
+                                type="button" role="tab" aria-controls="python" aria-selected="false">Python</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="dsaTabsContent">
+                        <!-- C++ Tab -->
+                        <div class="tab-pane fade show active" id="cplusplus" role="tabpanel"
+                            aria-labelledby="cplusplus-tab">
+                            <h3>C++ for DSA</h3>
+                            <p>Learn the basics of C++ and how to implement data structures and algorithms in C++.</p>
+                            <ul>
+                                <li><a href="#array-cpp" class="topic-link">Arrays</a></li>
+                                <li><a href="#linkedlist-cpp" class="topic-link">Linked Lists</a></li>
+                                <li><a href="#stack-cpp" class="topic-link">Stacks and Queues</a></li>
+                                <li><a href="#tree-cpp" class="topic-link">Trees and Graphs</a></li>
+                                <li><a href="#sorting-cpp" class="topic-link">Sorting and Searching Algorithms</a></li>
+                            </ul>
+                            <!-- Array Content -->
+                            <div id="array-cpp" class="topic-content">
+                                <h4>Arrays</h4>
+                                <p>An array is a data structure that stores a collection of elements, typically of the
+                                    same data type, in a contiguous block of memory. Arrays allow you to efficiently
+                                    store and retrieve data using an index.</p>
+                                <h5>Types of Arrays:</h5>
+                                <ul>
+                                    <li><strong>One-dimensional Array (1D):</strong> A simple list of elements, where
+                                        each element can be accessed using a single index. Example:
+                                        <code>int arr[] = {1, 2, 3, 4, 5};</code>
+                                    </li>
+                                    <li><strong>Two-dimensional Array (2D):</strong> An array of arrays, often referred
+                                        to as a matrix or table, where you can access elements using two indices (row
+                                        and column). Example: <code>int arr[2][3] = {{1, 2, 3}, {4, 5, 6}};</code></li>
+                                    <li><strong>Multi-dimensional Array:</strong> Arrays with more than two dimensions,
+                                        such as 3D, 4D, etc. Example: <code>int arr[2][3][4];</code></li>
+                                    <li><strong>Jagged Array:</strong> An array of arrays where each inner array may
+                                        have different lengths. Example: <code>int[][] arr = new int[3][];</code></li>
+                                    <li><strong>Dynamic Array:</strong> An array whose size can change during runtime.
+                                        Example: <code>std::vector&lt;int&gt; arr;</code></li>
+                                </ul>
+                            </div>
+                            <div id="stack-cpp" class="topic-content">
+                                <h4>Stacks and Queues</h4>
+                                <p>Stacks and Queues are fundamental data structures used in programming. A stack
+                                    follows the LIFO (Last In, First Out) principle, whereas a queue follows the FIFO
+                                    (First In, First Out) principle.</p>
+
+                                <h5>1. Stack</h5>
+                                <p>A stack is a linear data structure where elements are inserted and removed from the
+                                    same end (the top). It follows the LIFO principle, meaning the last element added is
+                                    the first to be removed.</p>
+
+                                <h5>Operations on Stack:</h5>
+                                <ul>
+                                    <li><strong>Push(x):</strong> Insert an element at the top.</li>
+                                    <li><strong>Pop():</strong> Remove and return the top element.</li>
+                                    <li><strong>Peek()/Top():</strong> Get the top element without removing it.</li>
+                                    <li><strong>isEmpty():</strong> Check if the stack is empty.</li>
+                                    <li><strong>isFull():</strong> Check if the stack is full (for fixed-size stacks).
+                                    </li>
+                                </ul>
+
+                                <h5>Implementation of Stack in C++ (Using Array)</h5>
+                                <pre><code>
+                                #include &lt;iostream&gt;
+                                using namespace std;
+                                
+                                #define SIZE 5  // Stack size
+                                
+                                class Stack {
+                                    int arr[SIZE];  
+                                    int top;  
+                                
+                                public:
+                                    Stack() { top = -1; }  
+                                
+                                    void push(int x) {
+                                        if (top == SIZE - 1) {
+                                            cout << "Stack Overflow\n";
+                                            return;
+                                        }
+                                        arr[++top] = x;
+                                    }
+                                
+                                    void pop() {
+                                        if (top == -1) {
+                                            cout << "Stack Underflow\n";
+                                            return;
+                                        }
+                                        top--;
+                                    }
+                                
+                                    int peek() {
+                                        if (top == -1) {
+                                            cout << "Stack is Empty\n";
+                                            return -1;
+                                        }
+                                        return arr[top];
+                                    }
+                                
+                                    bool isEmpty() {
+                                        return (top == -1);
+                                    }
+                                };
+                                </code></pre>
+
+                                <h5>Applications of Stack:</h5>
+                                <ul>
+                                    <li>Function Calls (Call Stack)</li>
+                                    <li>Undo/Redo Operations</li>
+                                    <li>Expression Evaluation (Infix to Postfix Conversion)</li>
+                                    <li>Backtracking (Maze problems, Recursion)</li>
+                                </ul>
+
+                                <h5>2. Queue</h5>
+                                <p>A queue is a linear data structure where elements are inserted at the rear and
+                                    removed from the front. It follows the FIFO principle.</p>
+
+                                <h5>Operations on Queue:</h5>
+                                <ul>
+                                    <li><strong>Enqueue(x):</strong> Insert an element at the rear.</li>
+                                    <li><strong>Dequeue():</strong> Remove and return the front element.</li>
+                                    <li><strong>Front():</strong> Get the front element without removing it.</li>
+                                    <li><strong>Rear():</strong> Get the last element without removing it.</li>
+                                    <li><strong>isEmpty():</strong> Check if the queue is empty.</li>
+                                    <li><strong>isFull():</strong> Check if the queue is full (for fixed-size queues).
+                                    </li>
+                                </ul>
+
+                                <h5>Implementation of Queue in C++ (Using Array)</h5>
+                                <pre><code>
+                                #include &lt;iostream&gt;
+                                using namespace std;
+                                
+                                #define SIZE 5  
+                                
+                                class Queue {
+                                    int arr[SIZE];  
+                                    int front, rear;  
+                                
+                                public:
+                                    Queue() { front = rear = -1; }
+                                
+                                    void enqueue(int x) {
+                                        if (rear == SIZE - 1) {
+                                            cout << "Queue Overflow\n";
+                                            return;
+                                        }
+                                        if (front == -1) front = 0;
+                                        arr[++rear] = x;
+                                    }
+                                
+                                    void dequeue() {
+                                        if (front == -1 || front > rear) {
+                                            cout << "Queue Underflow\n";
+                                            return;
+                                        }
+                                        front++;
+                                    }
+                                
+                                    int getFront() {
+                                        if (front == -1 || front > rear) {
+                                            cout << "Queue is Empty\n";
+                                            return -1;
+                                        }
+                                        return arr[front];
+                                    }
+                                
+                                    bool isEmpty() {
+                                        return (front == -1 || front > rear);
+                                    }
+                                };
+                                </code></pre>
+
+                                <h5>Types of Queues:</h5>
+                                <ul>
+                                    <li><strong>Simple Queue:</strong> Follows FIFO, inserts at the rear, removes from
+                                        the front.</li>
+                                    <li><strong>Circular Queue:</strong> The last position is connected to the first
+                                        position to utilize space efficiently.</li>
+                                    <li><strong>Deque (Double-Ended Queue):</strong> Allows insertion and deletion from
+                                        both front and rear.</li>
+                                    <li><strong>Priority Queue:</strong> Elements are removed based on priority rather
+                                        than order of insertion.</li>
+                                </ul>
+
+                                <h5>Applications of Queue:</h5>
+                                <ul>
+                                    <li>CPU Scheduling (Round Robin Scheduling)</li>
+                                    <li>Breadth-First Search (BFS) Algorithm</li>
+                                    <li>Printer Queue / Call Center Requests</li>
+                                    <li>Cache Implementation</li>
+                                </ul>
+
+                                <h5>Key Differences Between Stack and Queue:</h5>
+                                <table>
+                                    <tr>
+                                        <th>Feature</th>
+                                        <th>Stack (LIFO)</th>
+                                        <th>Queue (FIFO)</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Order</td>
+                                        <td>Last In, First Out</td>
+                                        <td>First In, First Out</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Operations</td>
+                                        <td>Push, Pop, Peek</td>
+                                        <td>Enqueue, Dequeue, Front</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Insertion</td>
+                                        <td>Insert at Top</td>
+                                        <td>Insert at Rear</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Deletion</td>
+                                        <td>Remove from Top</td>
+                                        <td>Remove from Front</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Use Cases</td>
+                                        <td>Recursion, Undo/Redo, Expression Evaluation</td>
+                                        <td>BFS, Scheduling, Resource Allocation</td>
+                                    </tr>
+                                </table>
+
+                                <h5>Important Questions on Stacks and Queues:</h5>
+                                <ul>
+                                    <li><strong>Stack-Based Questions:</strong>
+                                        <ul>
+                                            <li>Implement a stack using an array and linked list.</li>
+                                            <li>Reverse a string using a stack.</li>
+                                            <li>Check for balanced parentheses using a stack.</li>
+                                            <li>Next Greater Element Problem.</li>
+                                            <li>Sort a stack using recursion.</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Queue-Based Questions:</strong>
+                                        <ul>
+                                            <li>Implement a queue using an array and linked list.</li>
+                                            <li>Implement a circular queue.</li>
+                                            <li>Reverse a queue using a stack.</li>
+                                            <li>First non-repeating character in a stream.</li>
+                                            <li>LRU Cache Implementation.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                            <!-- Linked List Content -->
+                            <div id="linkedlist-cpp" class="topic-content">
+                                <h4>Linked Lists</h4>
+                                <p>A linked list is a linear data structure where each element is a separate object
+                                    called a node. Each node contains data and a reference (or link) to the next node in
+                                    the sequence.</p>
+                                <h5>Types of Linked Lists:</h5>
+                                <ul>
+                                    <li><strong>Singly Linked List:</strong> Each node points to the next node. Example:
+                                        <code>struct Node { int data; Node* next; };</code>
+                                    </li>
+                                    <li><strong>Doubly Linked List:</strong> Each node points to both the next and
+                                        previous nodes. Example:
+                                        <code>struct Node { int data; Node* next; Node* prev; };</code>
+                                    </li>
+                                    <li><strong>Circular Linked List:</strong> The last node points back to the first
+                                        node, forming a circle. Example:
+                                        <code>struct Node { int data; Node* next; };</code>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Java Tab -->
+                        <div class="tab-pane fade" id="java" role="tabpanel" aria-labelledby="java-tab">
+                            <h3>Java for DSA</h3>
+                            <p>Learn the basics of Java and how to implement data structures and algorithms in Java.</p>
+                            <ul>
+                                <li><a href="#array-java" class="topic-link">Arrays</a></li>
+                                <li><a href="#linkedlist-java" class="topic-link">Linked Lists</a></li>
+                                <li><a href="#stack-java" class="topic-link">Stacks and Queues</a></li>
+                                <li><a href="#tree-java" class="topic-link">Trees and Graphs</a></li>
+                                <li><a href="#sorting-java" class="topic-link">Sorting and Searching Algorithms</a></li>
+                            </ul>
+                            <!-- Array Content -->
+                            <div id="array-java" class="topic-content">
+                                <h4>Arrays</h4>
+                                <p>In Java, arrays are objects that store multiple elements of the same type. They are
+                                    dynamically allocated and can be accessed using indices.</p>
+                                <h5>Example:</h5>
+                                <pre><code>int[] arr = {1, 2, 3, 4, 5};</code></pre>
+                            </div>
+                        </div>
+                        <!-- Python Tab -->
+                        <div class="tab-pane fade" id="python" role="tabpanel" aria-labelledby="python-tab">
+                            <h3>Python for DSA</h3>
+                            <p>Learn the basics of Python and how to implement data structures and algorithms in Python.
+                            </p>
+                            <ul>
+                                <li><a href="#array-python" class="topic-link">Arrays</a></li>
+                                <li><a href="#linkedlist-python" class="topic-link">Linked Lists</a></li>
+                                <li><a href="#stack-python" class="topic-link">Stacks and Queues</a></li>
+                                <li><a href="#tree-python" class="topic-link">Trees and Graphs</a></li>
+                                <li><a href="#sorting-python" class="topic-link">Sorting and Searching Algorithms</a>
+                                </li>
+                            </ul>
+                            <!-- Array Content -->
+                            <div id="array-python" class="topic-content">
+                                <h4>Arrays</h4>
+                                <p>In Python, arrays can be implemented using lists or the <code>array</code> module.
+                                    Lists are more commonly used due to their flexibility.</p>
+                                <h5>Example:</h5>
+                                <pre><code>arr = [1, 2, 3, 4, 5]</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Java Developer Section -->
+        <section id="java-developer" class="mt-5">
+            <h2>Java Developer</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img class="javamage"
+                        src="https://media.licdn.com/dms/image/v2/D4D12AQE5E9zy3VyF8A/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1671112310875?e=2147483647&v=beta&t=0JrH76kkqqyqJskfk4svLJNAjqgC3zGClZTMoFhghpk"
+                        alt="Java Developer Course" class="course-img">
+                </div>
+                <div class="col-md-8">
+                    <ul class="nav nav-tabs" id="javaDevTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="core-java-tab" data-bs-toggle="tab"
+                                data-bs-target="#core-java" type="button" role="tab" aria-controls="core-java"
+                                aria-selected="true">Core Java</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="advanced-java-tab" data-bs-toggle="tab"
+                                data-bs-target="#advanced-java" type="button" role="tab" aria-controls="advanced-java"
+                                aria-selected="false">Advanced Java</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="javaDevTabsContent">
+                        <!-- Core Java Tab -->
+                        <div class="tab-pane fade show active" id="core-java" role="tabpanel"
+                            aria-labelledby="core-java-tab">
+                            <h3>Core Java</h3>
+                            <p>Learn the fundamentals of Java programming.</p>
+                            <ul>
+                                <li><a href="#basics-java" class="topic-link">Basic Syntax</a></li>
+                                <li><a href="#oop-java" class="topic-link">Object-Oriented Programming</a></li>
+                                <li><a href="#exception-java" class="topic-link">Exception Handling</a></li>
+                                <li><a href="#collections-java" class="topic-link">Collections Framework</a></li>
+                            </ul>
+                            <!-- Basics Content -->
+                            <div id="basics-java" class="topic-content">
+                                <h4>Basic Syntax</h4>
+                                <p>Java syntax is similar to C++ but simpler. It includes concepts like classes,
+                                    methods, and variables.</p>
+                                <h5>Example:</h5>
+                                <pre><code>public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}</code></pre>
+                            </div>
+                        </div>
+                        <!-- Advanced Java Tab -->
+                        <div class="tab-pane fade" id="advanced-java" role="tabpanel"
+                            aria-labelledby="advanced-java-tab">
+                            <h3>Advanced Java</h3>
+                            <p>Learn advanced Java concepts and frameworks.</p>
+                            <ul>
+                                <li><a href="#jdbc-java" class="topic-link">JDBC</a></li>
+                                <li><a href="#servlets-java" class="topic-link">Servlets</a></li>
+                                <li><a href="#jsp-java" class="topic-link">JSP</a></li>
+                                <li><a href="#spring-java" class="topic-link">Spring Framework</a></li>
+                            </ul>
+                            <!-- JDBC Content -->
+                            <div id="jdbc-java" class="topic-content">
+                                <h4>JDBC</h4>
+                                <p>Java Database Connectivity (JDBC) is an API for connecting and executing queries with
+                                    databases.</p>
+                                <h5>Example:</h5>
+                                <pre><code>Connection conn = DriverManager.getConnection(url, user, password);
+Statement stmt = conn.createStatement();
+ResultSet rs = stmt.executeQuery("SELECT * FROM users");</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Web Developer Section -->
+        <section id="web-developer" class="mt-5">
+            <h2>Web Developer</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img class="javamage"
+                        src="https://t3.ftcdn.net/jpg/02/14/87/96/360_F_214879686_R3HFJlk6WLr1kcdvy6Q9rtNASKN0BZBS.jpg"
+                        alt="Web Developer Course" class="course-img">
+                </div>
+                <div class="col-md-8">
+                    <ul class="nav nav-tabs" id="webDevTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="html-css-tab" data-bs-toggle="tab"
+                                data-bs-target="#html-css" type="button" role="tab" aria-controls="html-css"
+                                aria-selected="true">HTML & CSS</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="javascript-tab" data-bs-toggle="tab"
+                                data-bs-target="#javascript" type="button" role="tab" aria-controls="javascript"
+                                aria-selected="false">JavaScript</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="react-tab" data-bs-toggle="tab" data-bs-target="#react"
+                                type="button" role="tab" aria-controls="react" aria-selected="false">React</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="webDevTabsContent">
+                        <!-- HTML & CSS Tab -->
+                        <div class="tab-pane fade show active" id="html-css" role="tabpanel"
+                            aria-labelledby="html-css-tab">
+                            <h3>HTML & CSS</h3>
+                            <p>Learn the basics of web development with HTML and CSS.</p>
+                            <ul>
+                                <li><a href="#html-basics" class="topic-link">HTML Elements</a></li>
+                                <li><a href="#css-basics" class="topic-link">CSS Styling</a></li>
+                                <li><a href="#responsive-design" class="topic-link">Responsive Design</a></li>
+                                <li><a href="#bootstrap" class="topic-link">Bootstrap Framework</a></li>
+                            </ul>
+                            <!-- HTML Basics Content -->
+                            <div id="html-basics" class="topic-content">
+                                <h4>HTML Elements</h4>
+                                <p>HTML elements are the building blocks of web pages. They define the structure and
+                                    content of a webpage.</p>
+                                <h5>Example:</h5>
+                                <pre><code>&lt;h1&gt;Hello, World!&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+                            </div>
+                        </div>
+                        <!-- JavaScript Tab -->
+                        <div class="tab-pane fade" id="javascript" role="tabpanel" aria-labelledby="javascript-tab">
+                            <h3>JavaScript</h3>
+                            <p>Learn JavaScript to add interactivity to your web pages.</p>
+                            <ul>
+                                <li><a href="#js-basics" class="topic-link">Basic Syntax</a></li>
+                                <li><a href="#dom-manipulation" class="topic-link">DOM Manipulation</a></li>
+                                <li><a href="#event-handling" class="topic-link">Event Handling</a></li>
+                                <li><a href="#ajax" class="topic-link">AJAX</a></li>
+                            </ul>
+                            <!-- JS Basics Content -->
+                            <div id="js-basics" class="topic-content">
+                                <h4>Basic Syntax</h4>
+                                <p>JavaScript is a scripting language used to create dynamic and interactive web pages.
+                                </p>
+                                <h5>Example:</h5>
+                                <pre><code>console.log("Hello, World!");</code></pre>
+                            </div>
+                        </div>
+                        <!-- React Tab -->
+                        <!-- React Tab -->
+                        <div class="tab-pane fade" id="react" role="tabpanel" aria-labelledby="react-tab">
+                            <h3>React</h3>
+                            <p>Learn React to build dynamic and scalable web applications.</p>
+                            <ul>
+                                <li><a href="#react-components" class="topic-link">Components</a></li>
+                                <li><a href="#react-state-props" class="topic-link">State and Props</a></li>
+                                <li><a href="#react-hooks" class="topic-link">Hooks</a></li>
+                                <li><a href="#react-routing" class="topic-link">Routing</a></li>
+                            </ul>
+                            <!-- React Components Content -->
+                            <div id="react-components" class="topic-content">
+                                <h4>Components</h4>
+                                <p>React components are the building blocks of a React application. They can be
+                                    functional or class-based.</p>
+                                <h5>Example:</h5>
+                                <pre><code>function Welcome(props) {
+                            return &lt;h1&gt;Hello, {props.name}&lt;/h1&gt;;
+                        }</code></pre>
+                            </div>
+                            <!-- React State and Props Content -->
+                            <div id="react-state-props" class="topic-content">
+                                <h4>State and Props</h4>
+                                <p><strong>Props</strong> are used to pass data from parent to child components, while
+                                    <strong>State</strong> is used to manage data within a component.
+                                </p>
+                                <h5>Example:</h5>
+                                <pre><code>class Clock extends React.Component {
+                            constructor(props) {
+                                super(props);
+                                this.state = { date: new Date() };
+                            }
+                            render() {
+                                return (
+                                    &lt;div&gt;
+                                        &lt;h1&gt;Current Time: {this.state.date.toLocaleTimeString()}&lt;/h1&gt;
+                                    &lt;/div&gt;
+                                );
+                            }
+                        }</code></pre>
+                            </div>
+                            <!-- React Hooks Content -->
+                            <div id="react-hooks" class="topic-content">
+                                <h4>Hooks</h4>
+                                <p>Hooks allow you to use state and other React features in functional components.</p>
+                                <h5>Example:</h5>
+                                <pre><code>import React, { useState } from 'react';
+                        
+                        function Counter() {
+                            const [count, setCount] = useState(0);
+                            return (
+                                &lt;div&gt;
+                                    &lt;p&gt;You clicked {count} times&lt;/p&gt;
+                                    &lt;button onClick={() => setCount(count + 1)}&gt;Click me&lt;/button&gt;
+                                &lt;/div&gt;
+                            );
+                        }</code></pre>
+                            </div>
+                            <!-- React Routing Content -->
+                            <div id="react-routing" class="topic-content">
+                                <h4>Routing</h4>
+                                <p>React Router is used to handle navigation in a React application.</p>
+                                <h5>Example:</h5>
+                                <pre><code>import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+                        
+                        function App() {
+                            return (
+                                &lt;Router&gt;
+                                    &lt;Switch&gt;
+                                        &lt;Route path="/about" component={About} /&gt;
+                                        &lt;Route path="/" component={Home} /&gt;
+                                    &lt;/Switch&gt;
+                                &lt;/Router&gt;
+                            );
+                        }</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+
+    <!-- Placement Preparation Section -->
+    <section id="placement-preparation" class="mt-5">
+        <h2>Placement Preparation</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <img class="javamage"
+                    src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220722110934/How-to-Prepare-For-Campus-Placement.jpg"
+                    alt="Placement Preparation Course" class="course-img">
+            </div>
+            <div class="col-md-8">
+                <ul class="nav nav-tabs" id="placementTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="aptitude-tab" data-bs-toggle="tab"
+                            data-bs-target="#aptitude" type="button" role="tab" aria-controls="aptitude"
+                            aria-selected="true">Aptitude</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="technical-tab" data-bs-toggle="tab" data-bs-target="#technical"
+                            type="button" role="tab" aria-controls="technical" aria-selected="false">Technical</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="interview-tab" data-bs-toggle="tab" data-bs-target="#interview"
+                            type="button" role="tab" aria-controls="interview" aria-selected="false">Interview
+                            Preparation</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="placementTabsContent">
+                    <!-- Aptitude Tab -->
+                    <div class="tab-pane fade show active" id="aptitude" role="tabpanel" aria-labelledby="aptitude-tab">
+                        <h3>Aptitude</h3>
+                        <p>Prepare for aptitude tests with these topics.</p>
+                        <ul>
+                            <li><a href="#quantitative-aptitude" class="topic-link">Quantitative Aptitude</a></li>
+                            <li><a href="#logical-reasoning" class="topic-link">Logical Reasoning</a></li>
+                            <li><a href="#verbal-ability" class="topic-link">Verbal Ability</a></li>
+                            <li><a href="#data-interpretation" class="topic-link">Data Interpretation</a></li>
+                        </ul>
+                        <!-- Quantitative Aptitude Content -->
+                        <div id="quantitative-aptitude" class="topic-content">
+                            <h4>Quantitative Aptitude</h4>
+                            <p>Quantitative aptitude involves solving mathematical problems, including arithmetic,
+                                algebra, and geometry.</p>
+                            <h5>Example:</h5>
+                            <pre><code>If 2x + 3 = 7, what is the value of x?
+                        Solution: x = 2</code></pre>
+                        </div>
+                    </div>
+                    <!-- Technical Tab -->
+                    <div class="tab-pane fade" id="technical" role="tabpanel" aria-labelledby="technical-tab">
+                        <h3>Technical</h3>
+                        <p>Prepare for technical interviews with these topics.</p>
+                        <ul>
+                            <li><a href="#data-structures" class="topic-link">Data Structures</a></li>
+                            <li><a href="#algorithms" class="topic-link">Algorithms</a></li>
+                            <li><a href="#dbms" class="topic-link">DBMS</a></li>
+                            <li><a href="#os" class="topic-link">Operating Systems</a></li>
+                        </ul>
+                        <!-- Data Structures Content -->
+                        <div id="data-structures" class="topic-content">
+                            <h4>Data Structures</h4>
+                            <p>Data structures are ways to organize and store data efficiently. Common examples include
+                                arrays, linked lists, and trees.</p>
+                            <h5>Example:</h5>
+                            <pre><code>// Example of a linked list in C++
+                        struct Node {
+                            int data;
+                            Node* next;
+                        };</code></pre>
+                        </div>
+                    </div>
+                    <!-- Interview Preparation Tab -->
+                    <div class="tab-pane fade" id="interview" role="tabpanel" aria-labelledby="interview-tab">
+                        <h3>Interview Preparation</h3>
+                        <p>Prepare for interviews with these tips and tricks.</p>
+                        <ul>
+                            <li><a href="#resume-building" class="topic-link">Resume Building</a></li>
+                            <li><a href="#common-questions" class="topic-link">Common Interview Questions</a></li>
+                            <li><a href="#behavioral-questions" class="topic-link">Behavioral Questions</a></li>
+                            <li><a href="#mock-interviews" class="topic-link">Mock Interviews</a></li>
+                        </ul>
+                        <!-- Resume Building Content -->
+                        <div id="resume-building" class="topic-content">
+                            <h4>Resume Building</h4>
+                            <p>A well-crafted resume is essential for making a good first impression. Highlight your
+                                skills, projects, and achievements.</p>
+                            <h5>Tips:</h5>
+                            <ul>
+                                <li>Keep it concise (1-2 pages).</li>
+                                <li>Use action verbs like "developed," "designed," and "implemented."</li>
+                                <li>Tailor your resume for each job application.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <!-- Feedback Form -->
+    <div class="container my-5">
+        <h2 id="feedbackForm" class="text-center mb-4">Feedback Form</h2>
+        <form id="feedbackForm">
+            <!-- Name Field -->
+            <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+
+            <!-- Email Field -->
+            <div class="mb-3">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <!-- Feedback Field -->
+            <div class="mb-3">
+                <label for="feedback" class="form-label">Your Feedback</label>
+                <textarea class="form-control" id="feedback" rows="5" placeholder="Enter your feedback"
+                    required></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Submit Feedback</button>
+            </div>
+        </form>
+
+        <!-- Feedback Submission Message -->
+        <div id="feedbackMessage" class="mt-3 text-center" style="display: none;">
+            <p class="text-success">Thank you for your feedback! Your Feedback ID is: <strong id="feedbackId"></strong>
+            </p>
+        </div>
+    </div>
+
+    <!-- JavaScript for Feedback Form -->
+    <script>
+        // Function to generate a random feedback ID
+        function generateFeedbackId() {
+            const randomId = Math.random().toString(36).substring(2, 10).toUpperCase(); // Random 8-character ID
+            return `FID-${randomId}`;
+        }
+
+        // Handle feedback form submission
+        document.getElementById('feedbackForm').addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent form from submitting
+
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const feedback = document.getElementById('feedback').value;
+
+            // Generate a random feedback ID
+            const feedbackId = generateFeedbackId();
+
+            // Display the feedback ID and success message
+            document.getElementById('feedbackId').textContent = feedbackId;
+            document.getElementById('feedbackMessage').style.display = 'block';
+
+            // Log the feedback details (for demonstration purposes)
+            console.log(`Feedback Submitted:
+            Name: ${name}
+            Email: ${email}
+            Feedback: ${feedback}
+            Feedback ID: ${feedbackId}
+        `);
+
+            // Clear the form
+            document.getElementById('feedbackForm').reset();
+        });
+    </script>
+
+    <button class="up-button" id="upButton" onclick="scrollToTop()">↑</button>
+
+    <script>
+        // Show/hide the button on scroll
+        window.onscroll = function () {
+            var button = document.getElementById("upButton");
+            if (document.documentElement.scrollTop > 200) {
+                button.classList.add("show");
+            } else {
+                button.classList.remove("show");
+            }
+        };
+
+        // Function to smoothly scroll to top
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+    <!-- Footer -->
+    <!-- <button>
+        <a href="#navbarNav">Up</a>
+    </button> -->
+    <footer class="footer bg-dark text-white mt-5">
+        <div class="container py-4">
+            <div class="row">
+                <!-- About Section -->
+                <div class="col-md-4">
+
+                    <h5>About Us</h5>
+                    <p>We are dedicated to providing high-quality online education to help you achieve your goals. Join
+                        us and start learning today!</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#dsa" class="text-white text-decoration-none">DSA</a></li>
+                        <li><a href="#java-developer" class="text-white text-decoration-none">Java Developer</a></li>
+                        <li><a href="#web-developer" class="text-white text-decoration-none">Web Developer</a></li>
+                        <li><a href="#placement-preparation" class="text-white text-decoration-none">Placement
+                                Preparation</a></li>
+                    </ul>
+                </div>
+
+
+
+                <!-- Contact Info -->
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li>Email: support@eduplatform.com</li>
+                        <li>Phone: +91 9708092529</li>
+                        <li>Address: 123 Education Street, Knowledge City</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center mt-3">
+                <p>&copy; 2025 Online Education Platform. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Handle feedback form submission
+        document.getElementById('feedbackForm').addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent form from submitting
+
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const feedback = document.getElementById('feedback').value;
+
+            // Display success message
+            alert(`Thank you, ${name}! Your feedback has been submitted.`);
+
+            // Clear the form
+            document.getElementById('feedbackForm').reset();
+        });
+    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+        // Smooth scrolling for topic links
+        document.querySelectorAll('.topic-link').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+
+</html>
